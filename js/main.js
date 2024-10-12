@@ -3,28 +3,28 @@
 (function ($) {
 	"use strict";
 	//OWL-CAROUSEL	
-	$(".owl-carousel").each(function () {
-		var $Carousel = $(this);
-		$Carousel.owlCarousel({
-			loop: $Carousel.data('loop'),
-			autoplay: $Carousel.data("autoplay"),
-			margin: $Carousel.data('space'),
-			nav: $Carousel.data('nav'),
-			dots: $Carousel.data('dots'),
-			dotsSpeed: $Carousel.data('speed'),
-			responsive: {
-				0: {
-					items: 1
-				},
-				600: {
-					items: $Carousel.data('slide-res')
-				},
-				1000: {
-					items: $Carousel.data('slide'),
-				}
-			}
-		});
-	});
+	// $(".owl-carousel").each(function () {
+	// 	var $Carousel = $(this);
+	// 	$Carousel.owlCarousel({
+	// 		loop: $Carousel.data('loop'),
+	// 		autoplay: $Carousel.data("autoplay"),
+	// 		margin: $Carousel.data('space'),
+	// 		nav: $Carousel.data('nav'),
+	// 		dots: $Carousel.data('dots'),
+	// 		dotsSpeed: $Carousel.data('speed'),
+	// 		responsive: {
+	// 			0: {
+	// 				items: 1
+	// 			},
+	// 			600: {
+	// 				items: $Carousel.data('slide-res')
+	// 			},
+	// 			1000: {
+	// 				items: $Carousel.data('slide'),
+	// 			}
+	// 		}
+	// 	});
+	// });
 	//FLOOR PLAN POPUP  
 	$('.image-popup-floor-plan').magnificPopup({
 		type: 'image',
