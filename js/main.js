@@ -1,6 +1,3 @@
-/* Theme Name: Itawa - Real Estate Landing Page
-	Author: Rajesh-Doot
-	File Description: Main JS file of the template */	
 
 	
 (function ($) {
@@ -86,5 +83,7 @@ $("[data-background]").each(function () {
   $('.formclick').on('click',()=>{
 	$('#name').focus();
   })
+
+
 
 })(jQuery);

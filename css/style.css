@@ -505,14 +505,13 @@ html body .top-header.header-2 .sticky .nav-link:hover {
 .cta-section:before {
     content: "";
     position: absolute;
-    background: linear-gradient(29deg, rgb(38 61 40 / 82%), #4a381acc);
+    background: linear-gradient(29deg, rgb(38 61 40 / 92%), #4a381aed);
     height: 100%;
     width: 100%;
     top: 0;
     right: 0;
     left: 0;
 }
-
 .cta-section {
     background: url(../images/common/dots.png);
     position: relative
@@ -2087,3 +2086,4 @@ html body .top-header.header-2 .navbutton {
     background-repeat: no-repeat;
     background-position: center bottom;
 }
+

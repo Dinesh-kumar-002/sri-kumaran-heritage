@@ -90,12 +90,24 @@
     <!--End Header -->
 
     <!-- start of hero -->
-   <section style="margin-top: 95px;">
-    <!-- <picture>
-      <source media="(max-width:555px)" srcset="img/small-banner.jpg" />
-    </picture> -->
+   <!-- <section style="margin-top: 95px;">
     <img src="img/banner-5.jpg" alt="Flowers" style="width: 100%" />
-  </section>
+  </section> -->
+
+
+
+  <section id="home" style="margin-top: 90px;">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/banner-final-1.jpg" alt="" width="100%">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/banner-final-2.jpg" alt="" width="100%">
+        </div>
+      </div>
+    </div>
+    </section>
     <!-- end of hero slider -->
 
     <!-- about -->
@@ -717,11 +729,14 @@
     <script src="js/owl.carousel.js"></script>
     <script src="js/SmoothScroll.min.js"></script>
     <script src="js/swiper.min.js"></script>
-    <!-- <script src="js/validator.min.js"></script>   	 -->
-    <!-- <script src="js/form.js"></script>   	 -->
-    <!--common script file-->
     <script src="js/main.js"></script>
-
-    <script src="js/hero-script.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+          autoplay: {
+            delay: 6000,
+            disableOnInteraction: false,
+          },
+      });
+    </script>
   </body>
 </html>
