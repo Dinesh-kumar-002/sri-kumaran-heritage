@@ -13,7 +13,7 @@ $message= $_POST['message'];
    $mail->Port = 587;
    $mail->SMTPAuth = true;
    $mail->Username = 'quotationmailservice@gmail.com';
-   $mail->Password = 'otgu cxjv gzcf dsix';
+   $mail->Password = ;
    $mail->setFrom('quotationmailservice@gmail.com', "Client");
    $mail->addReplyTo($email, $name);
    $mail->addAddress('dkdon812002@gmail.com', 'YOU GOT A QUOTATION');
