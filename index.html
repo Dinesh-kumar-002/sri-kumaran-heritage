@@ -25,6 +25,29 @@
     />
     <!-- template-style-->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <style>
+       .error input {
+                border-color: red;
+                border-width: 2px;
+            }
+
+            .success input {
+                border-color: green;
+                border-width: 2px;
+            }
+
+            .error span {
+                color: red;
+            }
+
+            .success span {
+                color: green;
+            }
+
+            span.error {
+                color: red;
+            }
+    </style>
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="100">
@@ -89,16 +112,18 @@
     </header>
     <!--End Header -->
 
-    <section id="home" style="margin-top: 90px;">
+    <section id="home" style="margin-top:90px;">
+
       <div class="owl-carousel owl-theme custom-owl-carousel">
-        <div class="item">
-          <img src="img/banner-final-1.jpg" alt="" width="100%" />
-        </div>
-        <div class="item">
-          <img src="img/banner-final-2.jpg" alt="" width="100%" />
-        </div>
-    </div>
-    </section>
+          <div class="item">
+              <img src="img/banner-final-1.jpg" alt="" width="100%" />
+          </div>
+          <div class="item">
+              <img src="img/banner-final-2.jpg" alt="" width="100%" />
+          </div>
+      </div> 
+  </section>
+  
  
 
 
@@ -113,27 +138,26 @@
         <div class="row justify-content-center">
           <div class="col-lg-6">
             <div class="common-heading">
-              <h2>Project Name Goes Here</h2>
+              <h2>✨ Sri kumaran Heritage ✨</h2>
             </div>
           </div>
         </div>
         <div class="row mt45">
           <div class="col-lg-6">
-            <h4 class="h4-heading"><b>Project Tagline goes here</b></h4>
+            <h4 class="h4-heading"><b>Discover the hidden gem of Kundrathur.</b></h4>
+            
             <p style="line-height: 40px">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam cum quo, accusamus optio odit, nihil libero impedit,
-              dolorum nisi tempora eveniet alias. Fugiat ullam tenetur tempore
-              maxime? Necessitatibus quis asperiores quisquam unde voluptatum
-              laborum et nihil odit, aliquid, non, omnis ducimus ea sequi
-              aspernatur. Dolores enim optio dignissimos officia quia
-              praesentium sequi, voluptate cupiditate, facere obcaecati quasi in
-              adipisci sapiente eius excepturi possimus quas officiis similique
-              sint. Nobis et maiores in totam deleniti ut ratione vitae ipsam
-              harum possimus laboriosam quis mollitia assumenda quod debitis
-              nesciunt quaerat, natus, labore, corporis consequuntur illum sequi
-              voluptas! Quisquam ipsa est eligendi perferendis facere.
+              As a leading real estate developer, we are proud to announce the launch of our affordable prime plots in the " <b>New Phase-1</b> " of the Sri Kumaran Heritage project, located in the heart of <b>Kundrathur</b>.
+
             </p>
+            <ul class="hightlight-list mt-4">
+              <h4 class="h4-heading"><b>Highlights of project</b></h4>
+              <li>👉 It spreads across a " <b>8 acres</b> " expansion and all are CMDA and RERA Approved Plots...!! </li>
+              <li>👉 Price starts from <b>Rs.4590/sqft</b> </li>
+              <li>👉 Plot range starts from <b>547 Sq.Ft.</b></li>
+              <li>👉 It is Self Sustained, <b>Gated</b> Community.</li>
+              <li>👉 <b>90%</b> Bank Loan arranged from Leading Banks. </li>
+            </ul>
           </div>
           <div class="col-lg-6">
             <div class="form-block">
@@ -141,58 +165,59 @@
                 <h2><span>Contact Form</span></h2>
                 <!-- <p>Sample Flat is Ready for You</p> -->
               </div>
-              <form id="contactForm" data-toggle="validator" class="shake">
+              <form id="myform">
                 <div class="row">
                   <div class="fieldsets col-sm-12">
                     <input
                       type="text"
+                      name="name"
                       id="name"
                       placeholder="Enter name"
                       required
                       data-error="Please fill Out"
                     />
-                    <div class="help-block with-errors"></div>
+                    <span class="error" id="name_err"></span>
                   </div>
                   <div class="fieldsets col-sm-12">
                     <input
                       type="email"
                       id="email"
+                      name="email"
                       placeholder="Enter email"
-                      required
+                      
                     />
-                    <div class="help-block with-errors"></div>
+                    <span class="error" id="email_err"></span>
                   </div>
                 </div>
                 <div class="row">
                   <div class="fieldsets col-sm-12">
                     <input
+                    name="phone"
                       type="text"
-                      id="mobile"
+                      id="phone"
                       placeholder="Enter mobile"
-                      required
+                      
                       data-error="Please fill Out"
                     />
-                    <div class="help-block with-errors"></div>
+                    <span class="error" id="phone_err"></span>
                   </div>
                 </div>
                 <div class="fieldsets">
                   <textarea
                     id="message"
+                    name="message"
                     rows="4"
                     placeholder="Enter your message"
-                    required
+                    
                   ></textarea>
-                  <div class="help-block with-errors"></div>
                 </div>
                 <button
                   type="submit"
-                  id="form-submit"
+                  id="submitbtn"
                   class="btn lnk btn-main bg-btn"
                 >
-                  Submit <span class="circle"></span>
+                  Submit
                 </button>
-                <div id="msgSubmit" class="h3 text-center hidden"></div>
-                <div class="clearfix"></div>
               </form>
             </div>
           </div>
@@ -201,7 +226,7 @@
     </section>
     <!-- about -->
 
-    <div class="featurelistgere">
+    <!-- <div class="featurelistgere">
       <div class="featurelist-1">
         <div class="flst media">
           <div class="icon-"><i class="flaticon-home"></i></div>
@@ -237,7 +262,7 @@
           <p>Company Registration<span>ITAWA123456789XXX</span></p>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!--Start Amenities-->
     <section class="amenities-section pad-tb" id="amenities">
@@ -255,11 +280,11 @@
         </div>
 
         <div class="row mt45">
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col-6 col-md-4 col-lg-2">
             <div class="amenities-card">
               <div class="amenities-card-icon-section">
                 <img
-                  src="images/icons/security-guard.png"
+                  src="img/icons/001-cyber-security.png"
                   alt="Security"
                   class="img-fluid"
                 />
@@ -267,88 +292,64 @@
               <h3>Security</h3>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col-6 col-md-4 col-lg-2">
             <div class="amenities-card">
               <div class="amenities-card-icon-section">
                 <img
-                  src="images/icons/security-guard.png"
+                  src="img/icons/003-road.png"
                   alt="Security"
                   class="img-fluid"
                 />
               </div>
-              <h3>Security</h3>
+              <h3>Black top road</h3>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col-6 col-md-4 col-lg-2">
             <div class="amenities-card">
               <div class="amenities-card-icon-section">
                 <img
-                  src="images/icons/security-guard.png"
+                  src="img/icons/006-playground.png"
                   alt="Security"
                   class="img-fluid"
                 />
               </div>
-              <h3>Security</h3>
+              <h3>Park</h3>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col-6 col-md-4 col-lg-2">
             <div class="amenities-card">
               <div class="amenities-card-icon-section">
                 <img
-                  src="images/icons/security-guard.png"
+                  src="img/icons/004-bolt.png"
                   alt="Security"
                   class="img-fluid"
                 />
               </div>
-              <h3>Security</h3>
+              <h3>EB connections</h3>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col-6 col-md-4 col-lg-2">
             <div class="amenities-card">
               <div class="amenities-card-icon-section">
                 <img
-                  src="images/icons/security-guard.png"
+                  src="img/icons/005-street-light.png"
                   alt="Security"
                   class="img-fluid"
                 />
               </div>
-              <h3>Security</h3>
+              <h3>Street light </h3>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+          <div class="col-6 col-md-4 col-lg-2">
             <div class="amenities-card">
               <div class="amenities-card-icon-section">
                 <img
-                  src="images/icons/security-guard.png"
+                  src="img/icons/002-security-camera.png"
                   alt="Security"
                   class="img-fluid"
                 />
               </div>
-              <h3>Security</h3>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-            <div class="amenities-card">
-              <div class="amenities-card-icon-section">
-                <img
-                  src="images/icons/security-guard.png"
-                  alt="Security"
-                  class="img-fluid"
-                />
-              </div>
-              <h3>Security</h3>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-            <div class="amenities-card">
-              <div class="amenities-card-icon-section">
-                <img
-                  src="images/icons/security-guard.png"
-                  alt="Security"
-                  class="img-fluid"
-                />
-              </div>
-              <h3>Security</h3>
+              <h3>CCTV</h3>
             </div>
           </div>
         </div>
@@ -550,6 +551,8 @@
           <div class="col-lg-8">
             <div class="common-heading">
               <h2>WHY SRI KUMARAN HERITAGE?</h2>
+              <p>Expansive Development: Our project spans across 8 acres, featuring CMDA and RERA approved plots to ensure your investment is secure.
+</p>
             </div>
           </div>
         </div>
@@ -726,13 +729,130 @@
     <script src="js/swiper.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-      var owl = $('.custom-owl-carousel');
-          owl.owlCarousel({
-              loop:true,
-              autoplay:true,
-              autoplayTimeout:6000,
-              items:1
-          });
+      
+
+
+
+          $(document).ready(function () {
+
+            
+            var owl = $('.custom-owl-carousel');
+                owl.owlCarousel({
+                    loop:true,
+                    autoplay:true,
+                    autoplayTimeout:6000,
+                    items:1
+                });
+
+
+        $('#name').on('input', function () {
+            
+            checkuser();
+        });
+        $('#email').on('input', function () {
+            
+            checkemail();
+        });
+     
+        $('#phone').on('input', function () {
+            
+            checkmobile();
+        });
+    
+        $('#submitbtn').click(function () {
+            
+    
+    
+            if (!checkuser() && !checkemail() && !checkmobile()) {
+                
+                $("#message1").html(`<div class='alert alert-warning'>Please fill all required field</div>`);
+            } else if (!checkuser() || !checkemail() || !checkmobile()) {
+                $("#message1").html(`<div class='alert alert-warning'>Please fill all required field</div>`);
+                
+            }
+            else {
+                
+                $("#message1").html("");
+                var form = $('#myform')[0];
+                var data = new FormData(form);
+                $.ajax({
+                    type: "POST",
+                    url: "php_mail.php",
+                    data: data,
+                    processData: false,
+                    contentType: false,
+                    cache: false,
+                    async: false,
+                    beforeSend: function () {
+                        $('#submitbtn').html('<i class="fa-solid fa-spinner fa-spin"></i>');
+                        $('#submitbtn').attr("disabled", true);
+                        $('#submitbtn').css({ "border-radius": "20%" });
+                    },
+    
+                    success: function (data) {
+                        if(data == 'success'){
+                            window.location.href = "layout.pdf";
+                        }
+                        else{
+                            $("#message1").html(data);
+                        }
+                    },
+                    complete: function () {
+                        setTimeout(function () {
+                            $('#myform').trigger("reset");
+                            $('#submitbtn').html('Submit');
+                            $('#submitbtn').attr("disabled", false);
+                            $('#submitbtn').css({ "border-radius": "4px" });
+                        }, 200);
+                    }
+                });
+            }
+        });
+    
+     function checkuser() {
+        var pattern = /^[A-Za-z0-9/s]+$/;
+        var user = $('#name').val();
+        var validuser = pattern.test(user);
+        if ($('#name').val().length < 4) {
+            $('#name_err').html('username length is too short');
+            return false;
+        } else if (!validuser) {
+            $('#name_err').html('Name should be a-z ,A-Z only');
+            return false;
+        } else {
+            $('#name_err').html('');
+            return true;
+        }
+    }
+    function checkemail() {
+        var pattern1 = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+        var email = $('#email').val();
+        var validemail = pattern1.test(email);
+        if (email == "") {
+            $('#email_err').html('Required Email field');
+            return false;
+        } else if (!validemail) {
+            $('#email_err').html('invalid email');
+            return false;
+        } else {
+            $('#email_err').html('');
+            return true;
+        }
+    }
+    function checkmobile() {
+        if (!$.isNumeric($("#phone").val())) {
+            $("#phone_err").html("only number is allowed");
+            return false;
+        } else if ($("#phone").val().length != 10) {
+            $("#phone_err").html("10 digit required");
+            return false;
+        }
+        else {
+            $("#phone_err").html("");
+            return true;
+        }
+    }
+});
     </script>
   </body>
 </html>

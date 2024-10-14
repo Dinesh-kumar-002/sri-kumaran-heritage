@@ -379,24 +379,17 @@ html body .top-header.header-2 .sticky .nav-link:hover {
 
 .amenities-card {
     text-align: center;
-    background: #415d440f;
-    border-radius: 6px;
     padding: 20px;
     margin: 5px 0;
-    -webkit-box-shadow: 0 3px 6px rgba(91, 130, 148, .08);
-    box-shadow: 0 3px 6px rgba(91, 130, 148, .08);
     top: 0;
-    position: relative;
-    /* border: 1px solid #fee4e5; */
     cursor: grab;
 }
-
 .amenities-card-icon-section {
     width: 70px;
     margin: 0 auto 15px;
-    background: rgba(248, 83, 89, .1);
-    border-radius: 32% 68% 64% 36%/39% 58% 42% 61%;
-    padding: 8px
+    /* background: rgba(248, 83, 89, .1); */
+    /* border-radius: 32% 68% 64% 36%/39% 58% 42% 61%; */
+    /* padding: 8px; */
 }
 
 .amenities-card h3 {
@@ -2086,4 +2079,6 @@ html body .top-header.header-2 .navbutton {
     background-repeat: no-repeat;
     background-position: center bottom;
 }
-
+.hightlight-list li{
+    line-height: 40px;
+}
