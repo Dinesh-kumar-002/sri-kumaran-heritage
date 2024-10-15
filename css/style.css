@@ -7,7 +7,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #b89860
+    background: #9b7f50
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -139,11 +139,11 @@ button:focus {
 }
 
 html body .top-header.header-2 .sticky .nav-link:hover {
-    color: #b89860
+    color: #9b7f50
 }
 
 .top-header .nav-link:hover .nav-number {
-    color: #b89860 !important
+    color: #9b7f50 !important
 }
 
 .top-header .nav-link {
@@ -157,12 +157,12 @@ html body .top-header.header-2 .sticky .nav-link:hover {
 }
 
 .top-header .nav-link.active {
-    color: #b89860 !important
+    color: #9b7f50 !important
 }
 
 .top-header .nav-link.active:after {
     transition: all .2s linear 0s;
-    background: #b89860;
+    background: #9b7f50;
     width: 90%
 }
 
@@ -175,7 +175,7 @@ html body .top-header.header-2 .sticky .nav-link:hover {
     right: 0;
     width: 0;
     float: none;
-    background: #b89860;
+    background: #9b7f50;
     transition: width .4s ease, background-color .4s ease;
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -262,7 +262,7 @@ html body .top-header.header-2 .sticky .nav-link:hover {
 
 .owl-carousel .owl-dots .owl-dot.active span,
 .owl-carousel .owl-dots .owl-dot:hover span {
-    background: #b89860;
+    background: #9b7f50;
     transform: translate3d(0, -50%, 0) scale(.7);
     transition: all 250ms ease-out 0s
 }
@@ -281,7 +281,7 @@ html body .top-header.header-2 .sticky .nav-link:hover {
 }
 
 .owl-carousel .owl-dots .owl-dot span {
-    background: #b89860;
+    background: #9b7f50;
     display: inline-block;
     height: 20px;
     margin: 0 2px 5px;
@@ -454,7 +454,7 @@ html body .top-header.header-2 .sticky .nav-link:hover {
 
 .nav-filter .nav-item .nav-link1.active {
     color: #fff;
-    background: #b89860
+    background: #9b7f50
 }
 
 .nav-tabs .nav-item {
@@ -498,7 +498,7 @@ html body .top-header.header-2 .sticky .nav-link:hover {
 .cta-section:before {
     content: "";
     position: absolute;
-    background: linear-gradient(29deg, rgb(38 61 40 / 92%), #4a381aed);
+    background: rgb(38 61 40 / 92%);
     height: 100%;
     width: 100%;
     top: 0;
@@ -542,7 +542,7 @@ html body .top-header.header-2 .sticky .nav-link:hover {
     text-align: center;
     outline: 0;
     color: #fff;
-    background-color: #b89860;
+    background-color: #9b7f50;
     border: none;
     border-radius: 6px;
     display: inline-block;
@@ -593,13 +593,16 @@ html body .top-header.header-2 .sticky .nav-link:hover {
 }
 
 .loc-adlit li {
-    list-style: none;
+    list-style: disc;
     padding: 0 0 18px 0;
     font-size: 16px;
+    margin-left: 20px;
+    color: #8b6f3f;
+    font-weight: 600;
 }
 
 .loc-adlit li span {
-    list-style: none;
+    list-style: disc;
     text-align: right;
     float: right;
     font-weight: 700
@@ -676,7 +679,7 @@ html body .top-header.header-2 .sticky .nav-link:hover {
 
 .reviews-card span {
     font-size: 30px;
-    color: #b89860
+    color: #9b7f50
 }
 
 .reviews-card {
@@ -786,7 +789,7 @@ html body .top-header.header-2 .sticky .nav-link:hover {
 
 .form-block input:focus,
 .form-block textarea:focus {
-    border: 1px solid #b89860
+    border: 1px solid #9b7f50
 }
 
 .form-block input {
@@ -822,8 +825,8 @@ html body .top-header.header-2 .sticky .nav-link:hover {
 
 .custom-control-input:checked~.custom-control-label::before {
     color: #fff;
-    border-color: #b89860;
-    background-color: #b89860
+    border-color: #9b7f50;
+    background-color: #9b7f50
 }
 
 .custom-control-input:focus~.custom-control-label::before {
@@ -875,7 +878,7 @@ html body .top-header.header-2 .sticky .nav-link:hover {
     position: relative;
     top: -10px;
     font-size: 14px;
-    color: #b89860;
+    color: #9b7f50;
     margin: 0;
     padding: 0
 }
@@ -935,7 +938,7 @@ html body .top-header.header-2 .sticky .nav-link:hover {
     text-align: center;
     outline: 0;
     color: #fff;
-    background-color: #b89860;
+    background-color: #9b7f50;
     border: none;
     border-radius: 6px;
     width: 100%;
@@ -949,8 +952,8 @@ html body .top-header.header-2 .sticky .nav-link:hover {
 
 footer {
     background: #283e2b;
-    padding: 90px 0 25px 0;
-    color: #fff
+    padding: 90px 0 0 0;
+    color: #fff;
 }
 
 .footer- a img {
@@ -995,7 +998,8 @@ footer h3 {
 
 .copyright {
     border-top: 1px solid #13334a;
-    margin-top: 50px;
+    margin-top: 41px;
+    background: #76603d;
 }
 .footer-address-list li {
     font-size: 16px;
@@ -1017,7 +1021,7 @@ footer h3 {
     line-height: 34px
 }
 
-.footer-social-media-icons a.facebook {
+/* .footer-social-media-icons a.facebook {
     background: #0069f7;
     border-color: #0069f7
 }
@@ -1035,7 +1039,7 @@ footer h3 {
 .footer-social-media-icons a.linkedin {
     background: #0e72a3;
     border-color: #0e72a3
-}
+} */
 
 .footer-address-list li a {
     color: #fff
@@ -1789,7 +1793,7 @@ html body .top-header.header-2 .sticky .nav-link {
 
 
 .featurelist-2 {
-    background: #b89860;
+    background: #9b7f50;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1896,11 +1900,11 @@ html body .top-header.header-2 .sticky .nav-link {
 }
 
 .fltwithiconss .nav-link1.active {
-    color: #b89860
+    color: #9b7f50
 }
 
 .fltwithiconss .nav-item a:hover {
-    color: #b89860
+    color: #9b7f50
 }
 
 .fltwithiconss .nav-link1 span {
@@ -1974,7 +1978,7 @@ html body .top-header.header-2 .sticky .nav-link {
 
 .button1 {
     color: #fff;
-    background-color: #b89860
+    background-color: #9b7f50
 }
 
 html body .button1:hover {
@@ -1989,7 +1993,7 @@ html body .button1:hover {
 
 html body .button2:hover {
     color: #fff;
-    background-color: #b89860
+    background-color: #9b7f50
 }
 
 .bttn {
@@ -2081,4 +2085,18 @@ html body .top-header.header-2 .navbutton {
 }
 .hightlight-list li{
     line-height: 40px;
+}
+
+.banking{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.banking li img{
+    width: 150px !important;
+    filter: grayscale(1);
+}
+.banking li img:hover{
+    filter: grayscale(0);
 }

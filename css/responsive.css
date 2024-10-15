@@ -33,7 +33,7 @@
     .extrabtn {
         position: absolute;
         right: 60px;
-        top: 22px;
+        top: 35px;
     }
     .navbar-toggler {
         padding: 0
@@ -249,7 +249,7 @@
     }
 
     .common-heading h2 {
-        font-size: 30px
+        font-size: 22px
     }
 
     .m-spc {
